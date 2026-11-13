@@ -1,9 +1,5 @@
--- =====================================================================
---  P2S : Purchase-to-Stock
---  Script : 00_drop_all.sql
---  Purpose: Remove ALL P2S objects so 01 and 02 can be re-run cleanly.
---  WARNING: deletes every P2S_ table and its data. Use only in DEV.
--- =====================================================================
+-- P2S Purchase-to-Stock
+-- Drop all P2S objects (DEV only)
 
 begin
     for t in (select table_name from user_tables
